@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="ama.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <marquee>
+            <font size="3px">We Love To Help You<3 </marquee>
+            </font>
+            <h1 id="h1">Jaykishan&Sachi.code</h1>
+            <div id="navbar">
+                <a href="index.html">Home</a>
+                <a href="apc.html">APC(c++)(P)</a>
+				<a href="apctheory.html">APC(c++)(T)</a>
+			    <a href="wt.html">WT-II(Html)</a>
+                <a href="dbms.html">DBMS(P)</a>
+				<a href="dbmstheory.html">DBMS(T)</a>
+				<a id="bc" href="aboutus.html">About Us</a>
+                <input type="text" list="a1" id="option" placeholder="Search Here">
+                <datalist id="a1">
+                    <option>APC(c++)Assignment 1(Theory)</option>
+                    <option>APC(c++)Assignment 2(Theory)</option>
+                    <option>APC(c++)Assignment 3(Theory)</option>
+					<option>APC(c++)Assignment 1(Practical)</option>
+                    <option>APC(c++)Assignment 2(Practical)</option>
+                    <option>APC(c++)Assignment 3(Practical)</option>
+                    <option>DBMS Assignment 1(Theory)</option>
+                    <option>DBMS Assignment 2(Theory)</option>
+					 <option>DBMS Assignment 3(Theory)</option>
+					  <option>DBMS Assignment 4(Theory)</option>
+					   <option>DBMS Assignment 1(Practical)</option>
+					    <option>DBMS Assignment 2(Practical)</option>
+						  <option>WT-II Assignment 1(Practical)</option>
+						    <option>WT-II Assignment 2(Practical)</option>
+							  <option>WT-II Assignment 3(Practical)</option>
+							    <option>WT-II Assignment 4(Practical)</option>
+						 <option></option>
+                </datalist>
+			</div>
+                
+            </div>
+    </header>
+    <div class="pic-container">
+        <div class="card">
+            <img src="./bg.jpg" alt=""></img>
+            <div class="content">
+                <p>Welcome to JAYKISHAN&SACHI.CODE! Now You Don't Want to Message and call Anyone for Notes And Codes,
+                    We are dedicated to providing You with high-quality & Easy To Understand educational resources
+                    regarding Our College Syllabus..</p>
+            </div>
+        </div>
+    </div>
+    <section id=impedit"content"></section>
+    <div class="container">
+        <h1 class="heading">PRACTICAL CODES</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./HTMLL.jpg" alt="">
+                <h3>HTML CODES</h3>
+                <p>Download CODES Here</p>
+                <button onclick="redirectToWT()"> CODES</button>
+
+            </div>
+            <div class="box">
+                <img src="./cpp.jpeg" alt="">
+                <h3>C++ CODES</h3>
+                <p>Download CODES Here</p>
+                <button onclick="redirectToAPC()">CODES</button>
+
+            </div>
+            <div class="box">
+                <img src="./DBMS.jpg" alt="">
+                <h3>DBMS CODES</h3>
+                <p>Download CODES Here</p>
+                <button onclick="redirectToDBMS()">CODES</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="heading">THEORY NOTES</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./cpp.jpeg" alt="">
+                <h3>C++ NOTES</h3>
+                <p>Download NOTES Here</p>
+                <button onclick="redirectToAPCT()" class="btn">PDF NOTES</button>
+
+            </div>
+            <div class="box">
+                <img src="./DBMS.jpg" alt="">
+                <h3>DBMS NOTES</h3>
+                <p>Download NOTES Here</p>
+                <button onclick="redirectToDBMST()">PDF NOTES</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER  -->
+    <div class="footer">
+        <div class="container">
+            <div class="content-icon">
+                <ul>
+                    <li>
+                        <a href="./apc.html">
+                            APC(c++)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wt.html">
+                            WT-II
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dbms.html">
+                            DBMS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">
+                            About Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon">
+                <a href="https://wa.me/message/KOIM44IZSUGBB1">
+                    <i class="ri-whatsapp-fill"></i>
+
+                </a>
+                <a href="https://www.instagram.com/just_code._it?igsh=MW10OGM1cGdqcTkxZQ==">
+
+                    <i class="ri-instagram-fill"></i>
+                </a>
+
+                <a href="">
+
+                    <i class="ri-github-fill"></i>
+                </a>
+
+                <a href="">
+
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+
+            </div>
+            <div class="contex">
+                <p>COPYRIGHT CLAIM 2024</p>
+
+                <p>SITE BY JAYKISHAN & SACHI..</p>
+                <p>
+                    CONTACT: +919106153615,jaykishan1013@gmail.com
+
+                </p>
+            </div>
+            <hr>
+
+        </div>
+
+    </div>
+    <script>
+
+    document.getElementById("option").addEventListener("change", function() {
+        var selectedOption = this.value;
+        if (selectedOption === "APC(c++)Assignment 1(Theory)") {
+            window.location.href = "apc_assigment1.pdf";  
+        }
+		else if (selectedOption === "APC(c++)Assignment 2(Theory)") {
+            window.location.href = "apc_assignment.pdf";  
+        }
+		else if (selectedOption === "APC(c++)Assignment 3(Theory)") {
+            window.location.href = "apc_assigment3.pdf";  
+        }
+		else if (selectedOption === "APC(c++)Assignment 1(Practical)") {
+            window.location.href = "uni1.html";  
+        }
+		else if (selectedOption === "APC(c++)Assignment 2(Practical)") {
+            window.location.href = "uni1.html";  
+        }
+		else if (selectedOption === "APC(c++)Assignment 3(Practical)") {
+            window.location.href = "uni3.html";  
+        }
+		else if (selectedOption === "DBMS Assignment 1(Theory)") {
+            window.location.href = "DBMS_ASSIGMENT-1 (1).pdf";  
+        }
+		else if (selectedOption === "APC(c++)Assignment 2(Theory)") {
+            window.location.href = "DBMS_2.pdf";  
+        }
+		else if (selectedOption === "DBMS Assignment 3(Theory)") {
+            window.location.href = "DBMS_3.pdf";  
+        }
+		else if (selectedOption === "DBMS Assignment 4(Theory)") {
+            window.location.href = "DBMS_4.pdf";  
+        }
+		else if (selectedOption === "DBMS Assignment 1(Practical)") {
+            window.location.href = "dbms1.html";  
+        }
+		else if (selectedOption === "DBMS Assignment 2(Practical)") {
+            window.location.href = "dbms2.html";  
+        }
+		else if (selectedOption === "WT-II Assignment 1(Practical)") {
+            window.location.href = "wtunit1.html";  
+        }
+		else if (selectedOption === "WT-II Assignment 2(Practical)") {
+            window.location.href = "wtunit2.html";  
+        }
+		else if (selectedOption === "WT-II Assignment 3(Practical)") {
+            window.location.href = "wtunit3.html";  
+        }
+		else if (selectedOption === "WT-II Assignment 4(Practical)") {
+            window.location.href = "wtunit4.html";  
+        }
+    });
+
+
+
+        function redirectToAPC() {
+            window.location.href = "apc.html";
+        }
+        function redirectToDBMS() {
+            window.location.href = "dbms.html";
+        }
+        function redirectToWT() {
+            window.location.href = "wt.html";
+        }
+        function redirectToAPCT() {
+            window.location.href = "apctheory.html";
+        }
+        function redirectToDBMST() {
+            window.location.href = "dbmstheory.html";
+        }
+        function redirectToWTT() {
+            window.location.href = "wttheory.html";
+        }
+		
+		function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+		function myfunction() {
+  document.getElementById("myDropdown1").classList.toggle("show1");
+}
+function myunction() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+    </script>
+</body>
+
+</html>
